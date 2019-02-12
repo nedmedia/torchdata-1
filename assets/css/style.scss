@@ -44,6 +44,10 @@ header{
   top: 0;
   z-index: 9000;
   -webkit-transition:0.3s; -moz-transition:0.3s; -o-transition:0.3s; -ms-transition:0.3s; transition:0.3s;
+  @include respond-to($phone) {
+    background: #FFF;
+    box-shadow: 0px 0 13px 2px rgba(0, 0, 0, 0.2);
+  }
   .container{
     @include flexbox;
     @include flex-wrap(wrap);
@@ -58,9 +62,29 @@ header{
 
       }
     }
+    button#mobilemenu{
+      background: none;
+      border: none;
+      color: #444;
+      font-size: 1.4rem;
+      line-height: 1;
+      @include respond-to($large-desktop) {
+        display: none;
+      }
+    }
     nav{
+      display: none;
+      @include respond-to($phone) {
+        width: 100%;
+        background: #FFF;        
+      }
+      @include respond-to($large-desktop) {
+        display: block;
+      }
       ul{
+        padding: 20px 0 0;
         @include respond-to($large-desktop) {
+          padding: 0;
           @include flexbox;
           @include flex-wrap(wrap);
           @include justify-content(flex-end);
@@ -113,7 +137,8 @@ main{
     align-items: center;
     .container{
       .content{
-        padding: 20px;
+        padding: 80px 20px 0;
+        grid-template-columns: 1fr;
         @include respond-to($large-desktop) {
           padding: 0;
           display: grid;
@@ -122,26 +147,42 @@ main{
         }        
         .col{
           .data{
+            text-align: center;
+            margin: 40px 0 0 0;
             @include respond-to($large-desktop) {
+              margin: 0;
               padding: 0 0 0 50px;
+              text-align: left;
             }
           }
         }
       }
       a.scroll{
-        position: absolute;
+        position: relative;
         display: table;
-        margin: 0 auto;
-        bottom: 15px;
-        left: 50%;
-        transform: translate(-50%, 0);      
+        margin: 30px auto;
+        @include respond-to($large-desktop) {
+          position: absolute;
+          display: table;
+          margin: 0 auto;
+          bottom: 15px;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
       }
     }
   }
   section.products{
     .container{
-      padding: 100px 0;
+      padding: 60px 0 20px;
+      @include respond-to($large-desktop) {
+        padding: 100px 0;
+      }
       .block-intro{
+        padding: 20px;
+        @include respond-to($large-desktop) {
+          padding: 0;
+        }
         p{
           font-size: 1.2rem;
           text-align: center;
@@ -158,10 +199,15 @@ main{
       .items-list{        
         >.item{
           position: relative;
-          width: 100%;
-          margin: 0 0 40px 0;
-          padding: 40px;
+          width: calc(100% - 40px);
+          margin: 0 20px 40px;
+          padding: 20px;
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+          @include respond-to($large-desktop) {
+            width: 100%;
+            margin: 0 20 40px 0;
+            padding: 40px;
+          }
           .top{
             p{
               font-weight: 600;
@@ -172,11 +218,19 @@ main{
             @include flex-wrap(wrap);
             @include justify-content(center);
             @include align-items(flex-start);
-            padding: 40px 0 0;
+            padding: 20px 0 0;
+            @include respond-to($large-desktop) {
+              padding: 40px 0 0;
+            }
             >.item{
-              width: 23%;
-              margin: 0 1%;
-              text-align: center;
+              width: 100%;
+              display: block;
+              margin: 0 0 20px 0;
+              @include respond-to($large-desktop) {
+                width: 23%;
+                margin: 0 1%;
+                text-align: center;
+              }
               img{
 
               }
@@ -212,7 +266,10 @@ main{
   section.contacto{
     background: url(../img/bg-contacto.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; 
     .container{
-      padding: 100px 0;
+      padding: 50px 20px;
+      @include respond-to($large-desktop) {
+        padding: 100px 0;
+      }      
       .data{
         text-align: center;
       }
@@ -257,6 +314,10 @@ main{
   section.block-products{
     padding: 100px 0;
     .container{
+      padding: 0 20px;
+      @include respond-to($large-desktop) {
+        padding: 0;
+      }
       .top{
         text-align: center;
         margin: 0 0 60px 0;
@@ -270,13 +331,19 @@ main{
       }
       .bottom{
         &.items-list{
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-column-gap: 20px;
+          display: grid;          
+          grid-template-columns: 1fr;
           grid-row-gap: 20px;
+          @include respond-to($large-desktop) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 20px;
+          }
           .item{
             background: #FFF;
-            padding: 30px;
+            padding: 20px;
+            @include respond-to($large-desktop) {
+              padding: 30px;
+            }            
           }
         }
       }
@@ -290,8 +357,9 @@ footer{
   background: -webkit-linear-gradient(top, #00efff 0%,#00c7e7 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #00efff 0%,#00c7e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */  
   .container{
-    padding: 40px 0;
+    padding: 40px 20px;
     @include respond-to($large-desktop) {
+      padding: 40px 0;
       @include flexbox;
       @include flex-wrap(wrap);
       @include justify-content(space-between );
