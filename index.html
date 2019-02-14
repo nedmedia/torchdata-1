@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TORCH</title>
+  <meta name="Description" content="Torch es una solución 360º de Gestión de Derechos para contenido de video digital orientado a Broadcasters, Productores y Dueños de Contenido. ">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133323738-1"></script>
-  <script>
+  <script async>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -22,24 +23,30 @@
 <body>
   <header>
     <div class="container">
-      <a href="index.html" class="logo">
+      <a href="#intro" class="logo">
         <img src="assets/img/logo-final.png" alt="Torch">
       </a>
       <button id="mobilemenu">&#9776;</button>
       <nav>
-        <ul>
-          <li><a href="#products">Productos</a></li>
-          <li><a href="#socialnetworks">Redes Sociales</a></li>
-          <li><a href="#m3u8">M3U8</a></li>
-          <li><a href="#rights">NED Rights Management Lab</a></li>
-          <li><a href="#contact">Contacto</a></li>
+        <ul class="menu">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#torch-iq">IQ</a></li>
+          <li><a href="#torch-data">DATA</a></li>
+          <li><a href="#torch-ops">OPS</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>        
+      </nav>
+      <nav>
+        <ul class="lang">
+          <li><a href="esp.html">ESP</a></li>
+          <li><a class="current" href="index.html">ENG</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="intro">
+    <section class="intro" id="intro">
       <div class="container">
         <div class="content">
             <div class="col">
@@ -47,9 +54,8 @@
             </div>
             <div class="col">
               <div class="data">
-                <img src="assets/img/logo-intro.png" alt="">
-                <h3 class="intro">Torch es una solución 360º de Gestión de Derechos para contenido de video digital orientado a Broadcasters, Productores y Dueños de Contenido. 
-                </h3>
+                <img src="assets/img/logo-intro-en.png" alt="NED">
+                <h3 class="intro">Torch is 360º Rights Management solution for video content, aimed at Broadcasters, Producers and Content Owners</h3>
               </div>
             </div>
         </div>
@@ -61,30 +67,30 @@
     
     <section class="products" id="products">
       <div class="container">
-        <h2 class="title">Productos y Servicios</h2>
+        <h2 class="title">Products and Services</h2>
         <div class="block-intro">
-          <p>Torch provee una caja de herramientas ampliada para enfrentar el problema de la piratería desde múltiples ángulos.</p>
+          <p>Torch provides a wide toolbox to face the problem of piracy from multiple angles.</p>
         </div>
         <div class="items-list">
           <div class="item">
             <div class="top">
               <img src="assets/img/logo-torch-iq.png" alt="">
-              <p>TorchIQ agrega inteligencia humana a las herramientas tecnológicas. Nuestro equipo de expertos prestan servicios y desarrollan nuevas soluciones para enfrentar el problema de la piratería.</p>
+              <p>TorchIQ  adds human intelligence to technology tools. Our team of experts provide services and develop new solutions to the problem of piracy.</p>
             </div>
             <div class="bottom">
               <div class="item">
                 <img src="assets/img/ico-iq-01.png">
-                <h3>Gestión de derechos en redes sociales</h3>
+                <h3>Social Media Rights Management</h3>
               </div>
 
               <div class="item">
                 <img src="assets/img/ico-iq-02.png">
-                <h3>Análisis de OTT Ilegales</h3>
+                <h3>Illegal OTT Analysis</h3>
               </div>
 
               <div class="item">
                 <img src="assets/img/ico-iq-03.png">
-                <h3>Estudio de Monetización y Financiamiento de operaciones pirata </h3>
+                <h3>Research on Monetization and Financing of Pirate Operations</h3>
               </div>
             </div>
             <a href="#torch-iq" class="arrow-down">
@@ -95,22 +101,22 @@
           <div class="item">
             <div class="top">
                 <img src="assets/img/logo-torch-data.png" alt="">
-              <p>Torch Data entrega una visión completa del panorama de gestión de derechos. Estadísticas de material infractor encontrado,  acciones tomadas, tasa de respuesta, demonetización y la posibilidad de ingestar metadata para búsqueda hacen que sea la primera y única parada necesaria para los Dueños de Contenido.</p>
+              <p>Torch Data delivers a complete vision of the Rights Management landscape. Infringin material statistics, actions taken, demonetization and metadata ingestion make it the first and only necessary stop for Content Owners.</p>
             </div>
             <div class="bottom">
               <div class="item">
                 <img src="assets/img/ico-data-01.png">
-                <h3>Estadísticas de material infractor encontrado, acciones tomadas y resultados de acciones</h3>
+                <h3>Statistics on found infringing materials, actions taken and results.</h3>
               </div>
 
               <div class="item">
                 <img src="assets/img/ico-data-02.png">
-                <h3>Busqueda por titulo de propiedad y envío de notificaciones</h3>
+                <h3>Search by Property Title and send DMCA notifications</h3>
               </div>
 
                 <div class="item">
                   <img src="assets/img/ico-data-03.png">
-                  <h3>Resultado de análisis de streaming y estadística de monetización</h3>
+                  <h3>Streaming and Monetization Analysis results</h3>
                 </div>
             </div>
             <a href="#torch-data" class="arrow-down">
@@ -121,22 +127,22 @@
           <div class="item">
             <div class="top">
                 <img src="assets/img/logo-torch-ops.png" alt="">
-              <p>Torch Ops es la caja de herramientas integral para gestión de Contenido. Torch Ops busca contenido infractor, y gestiona su eliminación y demonetización.</p>
+              <p>Torch Ops is your Rights Management Toolbox. It looks for infringing content and works to take it down and demonetize it.</p>
             </div>
             <div class="bottom">
               <div class="item">
                 <img src="assets/img/ico-ops-01.png">
-                <h3>Búsqueda Automátizada de Material Infractor</h3>
+                <h3>Automated search for infringing material</h3>
               </div>
 
               <div class="item">
                 <img src="assets/img/ico-ops-02.png">
-                <h3>Securitización de Streams</h3>
+                <h3>Streaming Security</h3>
               </div>
 
                 <div class="item">
                   <img src="assets/img/ico-ops-03.png">
-                  <h3>Notificación y desmonetización de Material Infractor</h3>
+                  <h3>Takedown and demonetization of infringing material</h3>
                 </div>
             </div>
             <a href="#torch-ops" class="arrow-down">
@@ -151,37 +157,37 @@
       <div class="container">
         <div class="top">
           <img src="assets/img/logo-torch-iq.png" alt="Torch IQ">
-          <p>TorchIQ agrega inteligencia humana a las herramientas tecnológicas. Nuestro equipo de expertos prestan servicios y desarrollan nuevas soluciones para enfrentar el problema de la piratería. Trabajamos con Dueños de Contenido en resolver sus problemas a medida que aparecen, y además realizamos investigación proactiva para seguir el paso a la constante evolución del ecosistema de piratería.</p>
+          <p>TorchIQ adds human intelligence to the technology toolbox. Our team of experts provide services and develop new solutions to the problem of piracy. We work with Content Owners to solve their problems as they emerge, and we proactively execute research in order to stay ahead of the constant evolution of the piracy ecosystem.</p>
         </div>
         <div class="bottom items-list">
           <div class="item">
             <img src="assets/img/circle-iq-01.png">
-            <p>Gestión de derechos de redes sociales: Nuestro equipo de profesionales tiene experiencia  en administrar sistemas automatizados de gestión de derechos (ContentID, Rights Manager, etc) para mantener el control del contenido en plataformas sociales.</p>
+            <p>Social Media Rights Management: Our team of professionals has experience in managing automated Rights Management systems such as ContentId and Facebook Rights Manager to keep control of client assets in Social Media platforms.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-iq-02.png">
-            <p>Análisis de OTT Ilegales (IPTV): TorchIQ monitorea servicios de OTT ilegales con el fin de encontrar puntos susceptibles a enforcement en sus stacks.</p>
+            <p>Illegal OTT Service Analysis: TorchIQ monitors illegal OTT services to find parts of their stacks that are susceptible to enforcement.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-iq-03.png">
-            <p>Seguimiento de financiamiento de operaciones piratas: Como cualquier otra operación, la piratería requiere de financiamiento. Torch estudia y analiza las fuentes de financiamiento con el fin de encontrar actores responsivos a enforcement, ya sean procesadores de pagos, adservers, adexchanges, etc.</p>
+            <p>Piracy financing research: Like any other operation, Piracy requires financing. TorchIQ researches and analyzes income sources for pirate operations, from payment processors to adservers to find providers open to enforcement.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-iq-04.png">
-            <p>Consultorías de gestión de derechos: Torch cuenta con años de experiencia en Gestión de Derechos. Ponemos esa experiencia a disposición de nuestros clientes, estudiando los problemas particulares de cada organización y proponiendo soluciones específicas.</p>
+            <p>Rights Management consulting Services: We put our years of experience in Rights Management to work for you, studying your specific problems and developing tailor made solutions.</p>
           </div>
           <div class="item">
-              <img src="assets/img/circle-iq-05.png">
-              <p>Investigación y desarrollo: El equipo de Torch está constantemente estudiando el ecosistema de piratería, persiguiendo nuevos conocimientos y desarrollando nuevas soluciones a problemas emergentes.</p>
-            </div>
-            <div class="item">
-              <img src="assets/img/circle-iq-06.png">
-              <p>Auditorías de seguridad de streaming: Torch pone a disposición de dueños de contenido la experiencia de NED MediaWorks en streaming, con el fin de identificar vulnerabilidades en la infraestructura que permiten el robo de señales o archivos que terminan siendo distribuidos por sitios piratas.</p>
-            </div>
-            <div class="item">
-              <img src="assets/img/circle-iq-07.png">
-              <p>Preparación de dossier de evidencias: Torch puede recolectar para sus clientes información y evidencia de uso ilegítimo de contenido, para su uso por parte de los departamentos legales de dueños de contenidos en acciones legales, de llegar a ser necesario.</p>
-            </div>            
+            <img src="assets/img/circle-iq-05.png">
+            <p>Research and Development: Our team is constantly studying the Piracy ecosystem, creating new knowledge and developing solutions for emerging problems </p>
+          </div>
+          <div class="item">
+            <img src="assets/img/circle-iq-06.png">
+            <p>Streaming security auditing: Torch puts at your disposal NED Mediawork’s experience in developing and maintaining secure streaming platforms, identifying weak points in your security that allow pirates to steal your content.</p>
+          </div>
+          <div class="item">
+            <img src="assets/img/circle-iq-07.png">
+            <p>Evidence Collection and Compiling: We can collect, collate and compile evidence of copyright infringement to be used by your legal department.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -190,44 +196,44 @@
       <div class="container">
         <div class="top">
           <img src="assets/img/logo-torch-data.png" alt="Torch Data">
-          <p>Torch es una plataforma digital que centraliza información de todo el espectro de acciones de Gestión de Derechos de manera coherente y entendible para el usuario.</p>
+          <p>Torch Data is a platform that centralizes information on the entire spectrum of copyright enforcement actions and displays it in a coherent, readable way.</p>
         </div>
         <div class="bottom items-list">
           <div class="item">
             <img src="assets/img/circle-data-01.png" alt="">
-            <p>Búsqueda por título de propiedad: Dueños de Contenido pueden ingestar listas de títulos para generar búsquedas automatizadas de contenido infractor</p>
+            <p>Search content by title: Content Owners can ingest title lists to generate automated searches for infringing content.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-02.png" alt="">
-            <p>Envío de notificaciones: Torch Data permite el envío de Notificaciones DMCA desde la misma plataforma.</p>
+            <p>DMCA Notifications: You can send DMCA Notifications directly from Torch Data. </p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-03.png" alt="">
-            <p>Ver estadística de resultados de búsqueda: Torch entrega estadísticas por título del contenido infractor detectado.</p>
+            <p>Found Content Statistics: Torch Data provides detailed statistics on infringing content found</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-04.png" alt="">
-            <p>Gestión de evidencia: Permite al usuario descargar screenshots y registros de sitios usando material infractor.</p>
+            <p>Evidence Management:Content Owners  can see and download screenshots and logs of infringing sites</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-05.png" alt="">
-            <p>Plataforma amigable y adaptable a smartphone (responsive) </p>
+            <p>User Friendly, Responsive design </p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-06.png" alt="">
-            <p>Resultado de análisis de streaming: Torch Data entrega información detallada de los actores que prestan servicios de tecnología a sitios de streaming ilegales.</p>
+            <p>Streaming Analysis results: Torch Data provides detailed information of all the actors in the streaming stack of infringing sites.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-07.png" alt="">
-            <p>Estadística de monetización: Torch Data entrega información detallada de los actores que prestan servicios de monetización a operaciones pirata.</p>
+            <p>Monetization Analysis results: Torch Data provides detailed information of all the actors in the monetization stack of infringing sites.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-08.png" alt="">
-            <p>Estadística de desmonetización: Torch Data rastrea el progreso de la operación de demonetización y entrega la información a los Dueños de Contenido </p>
+            <p>Demonetization Statistics: Torch Data tracks the progress of the demonetization operation and keeps Content Owners up to date.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-data-09.png" alt="">
-            <p>Estadística de gestión de derecho en redes sociales</p>
+            <p>Social Media Rights Management statistics</p>
           </div>          
         </div>
       </div>
@@ -237,36 +243,36 @@
       <div class="container">
         <div class="top">
           <img src="assets/img/logo-torch-ops.png" alt="Torch Ops">
-          <p>Torch Ops maneja las operaciones diarias de Gestión de Derechos, proveyendo la tecnología y los servicios necesarios para hacer valer el derecho de autor de los Dueños de Contenido.</p>
+          <p>Torch Ops runs the day-to-day Rights Management operation, providing technology and services necessary to enforce clients copyrights.</p>
         </div>
         <div class="bottom items-list">
           <div class="item">
             <img src="assets/img/circle-ops-01.png" alt="">
-            <p>Scraping: Los bots de Torch Ops buscan contenido en una lista de sitios en constante ampiación, marcando el contenido infractor para su notificación</p>
+            <p>Scraping: Torch Ops bots scrape a constantly growing black list of websites for infringing content, marking it for human review and DMCA Notification</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-ops-02.png" alt="">
-            <p>Notificaciones: Luego de un proceso de revisión humana, Torch Ops envía las notificaciones DMCA a los proveedores correspondientes.</p>
+            <p>DMCA Notifications: After human review, DMCA notifications are sent for infringing sites.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-ops-03.png" alt="">
-            <p>Desmonetización: Torch Ops puede identificar a los proveedores de demanda, adservers y adexchanges que financian operacione spirata, y generar notificaciones y otros documentos para conseguir la baja de esos servicios, y detener el flujo de dinero.</p>
+            <p>Demonetization: Torch Ops can identify demand providers, adservers and adexchanges that finance piracy operations and generate notifications and reports in order to get infringing sites removed from those services and stop the flow of money into them.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-ops-04.png" alt="">
-            <p>Análisis de streaming: Torch Ops puede analizar el stack completo que permite a los sitios de streaming ilegal funcionar, para encontrar actores responsivos. Desde el servidor de streaming al proveedor de DNS, no dejamos piedra sin voltear. </p>
+            <p>Streaming Stack analysis: Torch Ops can dissect the full streaming stack used by pirate operations in order to find parties responsive to enforcement. From streaming server to DNS provider, we leave no stone unturned.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-ops-05.png" alt="">
-            <p>Fingerprinting: Torch Ops puede generar firmas únicas para activos de video y audio, y  usarlas para encontrar contenido infractor. Esto permite ubicar plataformas y actores pirata de manera más rápida y efectiva, encontrando la pieza de video en si misma, sin importar donde esté alojada.</p>
+            <p>Fingerprinting: Torch Ops can generate audio and video signatures for content and use them to look for infringing content. This allows for quicker discovery and removal of infringing content, no matter where it is hosted.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-ops-06.png" alt="">
-            <p>Capa de seguridad de streaming: Usando tecnología de NED MediaWorks, Torch Ops puede integrarse con cualquier flujo de streaming para fortalecer la seguridad de los streams o archivos de origen, evitando su potencial filtración a sitios piratas.</p>
+            <p>Streaming Security Layer: Using NED MediaWorks techology, Torch Ops can integrate into any streaming workflow to increase the security of origin streams or files, to prevent leaks towards pirate sites.</p>
           </div>
           <div class="item">
             <img src="assets/img/circle-ops-07.png" alt="">
-            <p>Watermarking: En cooperación con NEd MediaWorks, Torch Ops puede integrarse a cualquier flujo de streaming para agregar una marca de agua invisible que identifica a cada usuario único. Esto permite que en el caso de que un usuario legítimo esté redistribuyendo el contenido de manera ilegal, se le pueda cortar el acceso de manera expedita para detener la infracción.</p>
+            <p>Watermarking: In Cooperation with NED MediaWorks, Torch Ops can integrate to your streaming workflow to insert an invisible watermark to identify each unique user of the platform. This allows Content Owners to rescind their access to content if they are providing it to pirate sites.</p>
           </div>
         </div>
       </div>
@@ -274,17 +280,17 @@
 
     <section class="contacto" id="contact">
       <div class="container">
-        <h2 class="title">Contacto</h2>
+        <h2 class="title">Contact</h2>
         <div class="data">
-          <p>¿Quieres saber mas, o quieres cotizar una demo? escríbenos a hola@ned.cl o completa este formulario.</p>
+          <p>Do you want more info or want request a demo? Write us to hola@ned.cl or complete this form.</p>
         </div>
         <div class="form">
           <form method="POST" action="http://formspree.io/hola@ned.cl">
             <input type="hidden" name="_next" value="//torchdata.io/gracias.html" />
-            <input type="name" name="name" placeholder="Nombre">
-            <input type="email" name="email" placeholder="Correo electrónico">
-            <textarea name="message" placeholder="Mensaje"></textarea>
-            <button class="submit" type="submit">Enviar</button>
+            <input type="name" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button class="submit" type="submit">Send</button>
           </form>
         </div>
       </div>
@@ -297,7 +303,7 @@
           <img src="assets/img/logo-footer.png" alt="NED">
       </div>
       <div class="col">
-        <p>Torch, Una empresa de NED MediaWorks<br>
+        <p>Torch, A NED MediaWorks Company<br>
           78 SW 7th Street Miami FL 33130<br>
           Avda Vitacura 2772, Santiago, Chile<br>
           <a href="mailto:hola@ned.cl" target="_blank">hola@ned.cl</a>
@@ -306,7 +312,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

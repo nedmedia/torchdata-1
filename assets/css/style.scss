@@ -79,9 +79,12 @@ header{
         background: #FFF;        
       }
       @include respond-to($large-desktop) {
-        display: block;
+        @include flexbox;
+        @include flex-wrap(wrap);
+        @include justify-content(flex-end);
+        @include align-items(center);
       }
-      ul{
+      ul.menu{
         padding: 20px 0 0;
         @include respond-to($large-desktop) {
           padding: 0;
@@ -106,6 +109,35 @@ header{
           }
         }
       }
+      ul.lang{
+          padding: 30px 0 0 0;
+          margin: 0;
+          @include flexbox;
+          @include flex-wrap(wrap);
+          @include justify-content(flex-start);
+          @include align-items(center);
+          @include respond-to($large-desktop) {
+            padding: 0;
+            @include justify-content(flex-end);
+          }
+          li{
+            margin: 0 10px 0 0;
+            font-size: 0.9rem;
+            @include respond-to($large-desktop) {
+              margin: 0 0 0 10px;
+            }
+            a{
+              display: block;
+              &:hover{
+                color: $main-color;
+              }
+              &.current{
+                font-weight: bold;
+                color: $main-color;
+              }
+            }
+          }
+        }
     }
   }
   &.active{
